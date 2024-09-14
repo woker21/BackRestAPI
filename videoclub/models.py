@@ -9,4 +9,4 @@ class Video(models.Model):
         
 class Like(models.Model):
     video = models.ForeignKey(Video, on_delete=models.CASCADE, related_name="likes")
-    create_date = models.DateTimeField(auto_now_add=False)
+    create_date = models.DateTimeField(auto_now_add=False) 
